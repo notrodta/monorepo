@@ -1,4 +1,5 @@
 import styles from './page.module.css';
+import { npmLib } from '@monorepo/npm-lib';
 
 export default function Index() {
   /*
@@ -6,13 +7,16 @@ export default function Index() {
    *
    * Note: The corresponding styles are in the ./index.css file.
    */
+
+  npmLib();
+
   return (
     <div className={styles.page}>
       <div className="wrapper">
         <div className="container">
           <div id="welcome">
             <h1>
-              <span> Hello there, </span>
+              <span> Hello there, {npmLib()}</span>
               Welcome example 👋
             </h1>
           </div>

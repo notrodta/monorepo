@@ -1,0 +1,19 @@
+{
+  "name": "npm-lib",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/npm-lib/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/npm-lib",
+        "main": "libs/npm-lib/src/index.ts",
+        "tsConfig": "libs/npm-lib/tsconfig.lib.json",
+        "assets": ["libs/npm-lib/*.md"]
+      }
+    }
+  }
+}
