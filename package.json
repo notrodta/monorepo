@@ -2,7 +2,12 @@
   "name": "@monorepo/source",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "start:example": "npx nx dev example",
+    "build:example": "npx nx build example",
+    "start:myapp": "npx nx dev myapp",
+    "build:myapp": "npx nx build myapp"
+  },
   "private": true,
   "dependencies": {
     "next": "14.2.3",
@@ -23,6 +28,7 @@
     "@swc-node/register": "~1.9.1",
     "@swc/core": "~1.5.7",
     "@swc/helpers": "~0.5.11",
+    "@testing-library/react": "15.0.6",
     "@types/jest": "^29.4.0",
     "@types/node": "18.16.9",
     "@types/react": "18.3.1",
