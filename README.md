@@ -60,3 +60,26 @@ It will show tasks that you can run with Nx.
 - [Join the community](https://nx.dev/community)
 - [Subscribe to the Nx Youtube Channel](https://www.youtube.com/@nxdevtools)
 - [Follow us on Twitter](https://twitter.com/nxdevtools)
+
+
+## to publish library
+go to the lib folder in dist
+
+update package.json
+
+example package.json
+
+```
+{
+  "name": "npm-lib-tod",
+  "version": "0.0.1",
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "type": "commonjs",
+  "main": "./src/index.js",
+  "typings": "./src/index.d.ts",
+}
+```
+
+then run npm `publish --access=public` command
