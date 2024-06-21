@@ -1,1 +1,1 @@
-export * from './lib/npm-lib';
+export { npmLib } from './lib/npm-lib';
