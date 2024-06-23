@@ -16,7 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "@monorepo/npm-lib": ["libs/npm-lib/src/index.ts"],
-      "my-new-lib-tod": ["libs/my-new-lib/src/index.ts"]
+      "my-new-lib-tod": ["libs/my-new-lib/src/index.ts"],
+      "@proxy-server-tod": ["libs/proxy-server/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

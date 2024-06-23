@@ -8,7 +8,7 @@
     "start:myapp": "npx nx dev myapp",
     "build:myapp": "npx nx build myapp",
     "start:my-express-api": "nx serve my-express-api",
-    "build:my-express-api": "npx nx build my-express-api"
+    "build:my-express-api": "npx nx run proxy-server:build "
   },
   "private": true,
   "dependencies": {

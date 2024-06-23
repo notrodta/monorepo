@@ -1,0 +1,33 @@
+{
+  "name": "proxy-server",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/proxy-server/src",
+  "projectType": "library",
+  "release": {
+    "version": {
+      "generatorOptions": {
+        "packageRoot": "dist\\{projectRoot}",
+        "currentVersionResolver": "git-tag"
+      }
+    }
+  },
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/proxy-server",
+        "tsConfig": "libs/proxy-server/tsconfig.lib.json",
+        "packageJson": "libs/proxy-server/package.json",
+        "main": "libs/proxy-server/src/index.ts",
+        "assets": ["libs/proxy-server/*.md"]
+      }
+    },
+    "nx-release-publish": {
+      "options": {
+        "packageRoot": "dist\\{projectRoot}"
+      }
+    }
+  }
+}
