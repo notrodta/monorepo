@@ -52,6 +52,6 @@
 // }).listen(9008);
 
 
-import { proxyServer } from '@proxy-server-tod';
+import { proxyServer } from 'proxy-server-tod';
 
 proxyServer();
