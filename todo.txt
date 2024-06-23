@@ -1,3 +1,7 @@
 https://stackoverflow.com/questions/73293762/nx-missing-dependencies-on-generated-package-json
 
 https://nx.dev/concepts/buildable-and-publishable-libraries
+
+
+https://www.npmjs.com/package/http-proxy
+https://www.npmjs.com/package/http-proxy-middleware
