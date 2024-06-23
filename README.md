@@ -63,6 +63,11 @@ It will show tasks that you can run with Nx.
 
 
 ## to publish library
+generate publishable library:
+`nx g lib my-new-lib --directory=libs --publishable --importPath=my-new-lib-tod`
+
+build the library
+
 go to the lib folder in dist
 
 update package.json
@@ -71,15 +76,15 @@ example package.json
 
 ```
 {
-  "name": "npm-lib-tod",
+  "name": "my-new-lib-tod",
   "version": "0.0.1",
   "dependencies": {
     "tslib": "^2.3.0"
   },
   "type": "commonjs",
   "main": "./src/index.js",
-  "typings": "./src/index.d.ts",
+  "typings": "./src/index.d.ts"
 }
 ```
 
-then run npm `publish --access=public` command
+then run `npm publish --access=public` command
